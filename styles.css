@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.explorer {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 1px solid black;
+}
+
+.actions {
+    margin-bottom: 15px;
+}
+
+.actions input {
+    width: calc(100% - 50px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.action-buttons button {
+    background: #007bff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background: #0056b3;
+}
+.action-buttons button title {
+    background: #0056b3;
+}
+
+#toggle_sidebar {
+    background: #007bff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+    height: 40px;
+    align-self: center;
+}
+
+#toggle_sidebar.collapsed {
+    background: #0056b3;
+}
+
+#jstree {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#display {
+    flex: 2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#file_content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.custom-highlight {
+    background-color: yellow;
+    color: #333;
+}
+.search-container {
+    position: relative;
+    display: flex;
+}
+
+#search_input {
+    padding-right: 40px;
+}
